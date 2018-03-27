@@ -3,8 +3,9 @@ html {
 }
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #24292e;
 }
 body {
  margin: 0px;
