@@ -8,6 +8,9 @@ ul {
     padding-bottom: 12px;
     background-color: #24292e;
 }
+li {
+ float: left;
+}
 body {
  margin: 0px;
 }
