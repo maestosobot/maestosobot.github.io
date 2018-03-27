@@ -1,6 +1,9 @@
 html {
  margin: 0px;
 }
+body {
+ margin: 0px;
+}
 .header {
  border-top: 5px solid #7289da; 
 }
