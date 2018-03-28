@@ -14,8 +14,8 @@ li {
 }
 li a img {
  float: left !important;
- width: 100px;
- heigth: 100px;
+ width: 32px;
+ heigth: 32px;
 }
 li a {
     display: block;
