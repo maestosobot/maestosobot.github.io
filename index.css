@@ -9,8 +9,13 @@ ul {
     background-color: #24292e;
 }
 li {
- float: left;
+ float: right;
  margin-right: 10px;
+}
+li a img {
+ float: left !important;
+ width: 100px;
+ heigth: 100px;
 }
 li a {
     display: block;
