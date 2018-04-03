@@ -12,8 +12,8 @@ li {
  float: right;
  margin-right: 10px;
 }
-li a img {
- float: left !important;
+li:first-child {
+ margin-right: auto;
  width: 32px;
  height: 32px;
 }
