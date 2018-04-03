@@ -13,8 +13,7 @@ li {
  margin-right: 10px;
 }
 li img {
- margin-right: auto;
- position: absolute;
+ text-align: center;
  width: 32px;
  height: 32px;
 }
