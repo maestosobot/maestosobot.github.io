@@ -17,13 +17,47 @@
     <meta property="og:image" content="https://i.imgur.com/cCIpkkM.png" /> 
     <link rel = "stylesheet" href = "./index.css">
   </head>
-  <header id = "header" class = "header"> 
-  
-  </header>
+  <body>
+  <div class = "navbar">
 <ul>
-  <li> <a href = "https://maestosobot.github.io/" class = "image"> <img src = "https://i.imgur.com/cCIpkkM.png"> </a> </li>
+  <li> <a href = "./index.html"> <img class = "image" src = "https://i.imgur.com/cCIpkkM.png"> </a> </li>
+  <li> <a href = "./index.html" class = "active"> Home </a> </li>
   <li> <a target="_blank" href = "https://discord.gg/shbXPXA"> Support Server </a> </li>
   <li> <a target="_blank" href = "https://discordapp.com/oauth2/authorize?client_id=374652901148196866&scope=bot&permissions=70609991"> Invite </a> </li>
   <li> <a href = "./commands.html"> Commands </a> </li>
+  <li> <a href = "./listedon.html"> Listed On </a> </li>
   </ul>
+  </div>
+  <br>
+  <div class = "mainpart">
+  <h1> About </h1>
+  <p> I started Maestoso back in late october 2017 as a way for me to learn to code in JavaScript, I learned pretty quickly and now it has become my hobby. When I have time and when I want to I work on it. I always want the core features of Maestoso to be free, but there might be a way to donate some time in the future. Right now I'm glad with what I have and I'm grateful for everyone that uses Maestoso.
+  <h3> Note: </h3>
+  <p class = "prefix"> Maestoso's prefix is ?? but you can mention Maestoso and customize the prefix on your server to your liking.
+  </div>
+  <div class = "footer">
+<div class = "stats">
+<p>
+Maestoso is currently in 
+<span id="guild-count">90+</span>
+servers.
+</p>
+</div>
+  <div class = "copyright">
+  <p> Copyright © 2018 <a target = "_blank" href = "http://deadlyforce.net/">DeadlyForce.</a>  All Rights Reserved. </p>
+  </div>
+  </div>
+<script>
+    var request = new XMLHttpRequest();
+    request.open('GET', 'https://discordbots.org/api/bots/374652901148196866/stats?_', true);
+    request.onload = function() {
+        if (request.status >= 200 && request.status < 400) {
+            var data = JSON.parse(request.responseText);
+            document.getElementById("guild-count").innerText = data['server_count'].toLocaleString();
+        }
+    };
+    request.onerror = function(){}; 
+    request.send();
+</script>
+</body>
   </html>
