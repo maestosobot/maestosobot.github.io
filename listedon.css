@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Karla|Questrial|Roboto');
+html {
+ margin: 0px;
+ font-family: Karla;
+ background-color: #F1F1D4;
+}
+ul {
+    margin: 0px;
+    list-style-type: none;
+	position: sticky;
+}
+.navbar {
+	background-color: #36393E;
+	margin: 0px;
+	height: 72px;
+	box-sizing: border-box;
+	display: flex;
+	color: #fff;
+}
+li {
+	margin-top: 27px;
+ float: left;
+ margin-right: 20px;
+}
+li .image {
+
+ width: 64px;
+ height: 64px;
+ margin-top: -24px !important;
+ margin-right: 10px;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+	font-weight: 500;
+}
+li a:hover {
+	color: #FFA500;
+}
+li a {
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+li a.active {
+	color: #ffdb99;
+
+}
+li a.active:hover {
+	color: #FFA500;
+}
+body {
+ margin: 0px;
+}
+.mainpart {
+	font-size: 13px;
+	text-align: center;
+}
+.mainpart a {
+	font-size: 20px;
+	margin-right: 15px;
+	color: #FFA500;
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+.mainpart a:hover {
+	color: #b27300;
+	text-decoration: underline;
+}
+.mainpart {
+	font-family: Roboto;
+	margin: 15px;
+}
+.mainpart h1 {
+	border-bottom: 1px solid #d8d8be;
+}
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}
+.copyright {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.copyright a {
+	color: #FFA500;
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+.copyright a:hover {
+	color: #b27300;
+	text-decoration: underline;
+}

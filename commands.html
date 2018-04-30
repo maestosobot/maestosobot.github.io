@@ -1,1 +1,108 @@
-Comming soon
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Maestoso | A Discord Bot</title>
+    <link rel = "icon" href = "https://i.imgur.com/cCIpkkM.png" type="image/x-icon">
+    <meta name="twitter:card" value="summary" />
+    <meta name="twitter:title" content="Maestoso" />
+    <meta name="twitter:description" content="Maestoso is a multifunctional discord bot that can do music, basic moderation, translation and much more." />
+    <meta name="twitter:image" content="https://i.imgur.com/cCIpkkM.png"> 
+
+    <meta name="theme-color" content="#7289da">
+
+    <meta property="og:title" content="Maestoso | Commands" />
+    <meta property="og:url" content="https://maestoso.github.io/commands.html" /> 
+    <meta name="twitter:description" content="Maestoso is a multifunctional discord bot that can do music, basic moderation, translation and much more." />
+    <meta property="og:image" content="https://i.imgur.com/cCIpkkM.png" /> 
+    <link rel = "stylesheet" href = "./commands.css">
+  </head>
+  <body>
+  <div class = "navbar">
+<ul>
+  <li> <a href = "./index.html"> <img class = "image" src = "https://i.imgur.com/cCIpkkM.png"> </a> </li>
+  <li> <a href = "./index.html"> Home </a> </li>
+  <li> <a target="_blank" href = "https://discord.gg/shbXPXA"> Support Server </a> </li>
+  <li> <a target="_blank" href = "https://discordapp.com/oauth2/authorize?client_id=374652901148196866&scope=bot&permissions=70609991"> Invite </a> </li>
+  <li> <a href = "./commands.html" class = "active"> Commands </a> </li>
+  <li> <a href = "./listedon.html"> Listed On </a> </li>
+  </ul>
+  </div>
+  <br>
+  <div class = "mainpart">
+  <h2> Note: </h2>
+  <p class = "prefix"> Maestoso's prefix is ?? but you can mention Maestoso and customize the prefix on your server to your liking. </p>
+  <h1> General Commands </h1>
+ <div class = "commands">
+ <p> <b> Ping: </b> Shows your ping to the server. </p>
+ <p> <b> Say: </b> Repeats what you said.</p>
+ <p> <b> Discrim: </b> Searches for a discriminator (the number after the # in your name) </p>
+ <p> <b> Tag: </b> Lets you create and view other users tags.</p>
+ <p> <b> Google: </b> Shows the top result on Google of what you searched for. </p>
+ <p> <b> Weather: </b> Shows you the current weather of the location you specified.</p>
+ <p> <b> Support: </b> Links you to Maestoso's support server. </p>
+ <p> <b> Invite: </b> Invites Maestoso to your server.</p>
+ <p> <b> Upvote: </b> Links you to Discord Bot List where you can upvote Maestoso.</p>
+ <p> <b> Stats: </b> Shows Maestoso's stats, ie uptime and server count.</p>
+ <p> <b> Serverinfo: </b> Shows server information such as member count.</p>
+ <p> <b> Userinfo: </b> Shows the information of a user.</p>
+ <p> <b> Ascii: </b> Writes your text with slashes.</p>
+ <p> <b> Avatar:</b> Shows the avatar picture of a user.</p>
+ </div>
+ <h1> Music Commands </h1>
+ <div class = "commands">
+ <p> <b> Play: </b> Plays a link or a song name.</p>
+ <p> <b> Stop: </b> Stops the current song that's playing.</p>
+ <p> <b> Skip: </b> Skips the current song that's playing.</p>
+ <p> <b> Join: </b> Join the voice channel that you're in.</p>
+ <p> <b> Leave: </b> Makes Maestoso leave the channel that it's in.</p>
+ <p> <b> Pause: </b> Pauses the song that is currently playing.</p>
+ <p> <b> Resume: </b> Resumes the paused song.</p>
+ <p> <b> Queue: </b> Shows all the songs that are in the queue.</p>
+ <p> <b> Currently: </b> Shows the song that is currently playing.</p>
+ <p> <b> Volume: </b> Allows you to change the volume of the song that's currently playing.</p>
+ </div>
+ <h1> Fun Commands </h1>
+ <div class = "commands">
+ <p> <b> Clever: </b> Lets you talk to a clever bot.</p>
+ <p> <b> Knock: </b> Plays a high quality knocking sound (good for trolling)</p>
+ <p> <b> Flipcoin: </b> Flips a coin for you.</p>
+ <p> <b> 8ball: </b> Gives an answer to your yes or no question.</p>
+ <p> <b> Cowsay: </b> Try it for yourself.</p>
+ <p> <b> Dice: </b> Rolls a number from 1 to 6.</p>
+ <p> <b> Calmdown: </b> Gives you a little animation of emojis calming down.</p>
+ <p> <b> Joke: </b> Gives you a good joke or just a really bad pun.</p>
+ </div>
+ <h1> Currency Commands </h1>
+ <div class = "commands">
+ <p> <b> Daily: </b> Gives you a daily bonus of 100 credits.</p>
+ <p> <b> Credits: </b> Shows you the current amoung of credits you have.</p>
+ </div>
+ <h1> Mod Commands </h1>
+ <div class = "commands">
+ <p> <b> Poll: </b> Creates a yes or no poll.</p>
+ <p> <b> Prefix: </b> Lets you set a custom prefix on your server.</p>
+ <p> <b> Kick: </b> Kicks the mentioned user.</p>
+ <p> <b> Ban: </b> Bans the mentioned user.</p>
+ <p> <b> Purge: </b> Bulk deletes messages.</p>
+ <p> <b> Config: </b> Allows you to see the server config.</p>
+ <p> <b> Toggleinvites: </b> Allows you to turn on invite prevention. </p>
+ </div>
+  </div>
+  <div class = "copyright">
+  <p> Copyright © 2018 <a target = "_blank" href = "http://deadlyforce.net/">DeadlyForce.</a>  All Rights Reserved. </p>
+  </div>
+<script>
+    var request = new XMLHttpRequest();
+    request.open('GET', 'https://discordbots.org/api/bots/374652901148196866/stats?_', true);
+    request.onload = function() {
+        if (request.status >= 200 && request.status < 400) {
+            var data = JSON.parse(request.responseText);
+            document.getElementById("guild-count").innerText = data['server_count'].toLocaleString();
+        }
+    };
+    request.onerror = function(){}; 
+    request.send();
+</script>
+</body>
+  </html>
