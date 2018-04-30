@@ -1,63 +1,104 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    
-    <title>Maestoso | A Discord Bot</title>
-    <link rel = "icon" href = "https://i.imgur.com/cCIpkkM.png" type="image/x-icon">
-    <meta name="twitter:card" value="summary" />
-    <meta name="twitter:title" content="Maestoso" />
-    <meta name="twitter:description" content="Maestoso is a multifunctional discord bot that can do music, basic moderation, translation and much more." />
-    <meta name="twitter:image" content="https://i.imgur.com/cCIpkkM.png"> 
+@import url('https://fonts.googleapis.com/css?family=Karla|Questrial|Roboto');
+html {
+ margin: 0px;
+ font-family: Karla;
+ background-color: #F1F1D4;
+}
+ul {
+    margin: 0px;
+    list-style-type: none;
+	position: sticky;
+}
+.navbar {
+	background-color: #36393E;
+	margin: 0px;
+	height: 72px;
+	box-sizing: border-box;
+	display: flex;
+	color: #fff;
+}
+li {
+	margin-top: 27px;
+ float: left;
+ margin-right: 20px;
+}
+li .image {
 
-    <meta name="theme-color" content="#7289da">
+ width: 64px;
+ height: 64px;
+ margin-top: -24px !important;
+ margin-right: 10px;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+	font-weight: 500;
+}
+li a:hover {
+	color: #FFA500;
+}
+li a {
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+li a.active {
+	color: #ffdb99;
 
-    <meta property="og:title" content="Maestoso" />
-    <meta property="og:url" content="https://maestoso.github.io/" /> 
-    <meta name="twitter:description" content="Maestoso is a multifunctional discord bot that can do music, basic moderation, translation and much more." />
-    <meta property="og:image" content="https://i.imgur.com/cCIpkkM.png" /> 
-    <link rel = "stylesheet" href = "./index.css">
-  </head>
-  <body>
-  <div class = "navbar">
-<ul>
-  <li> <a href = "./index.html"> <img class = "image" src = "https://i.imgur.com/cCIpkkM.png"> </a> </li>
-  <li> <a href = "./index.html" class = "active"> Home </a> </li>
-  <li> <a target="_blank" href = "https://discord.gg/shbXPXA"> Support Server </a> </li>
-  <li> <a target="_blank" href = "https://discordapp.com/oauth2/authorize?client_id=374652901148196866&scope=bot&permissions=70609991"> Invite </a> </li>
-  <li> <a href = "./commands.html"> Commands </a> </li>
-  <li> <a href = "./listedon.html"> Listed On </a> </li>
-  </ul>
-  </div>
-  <br>
-  <div class = "mainpart">
-  <h1> About </h1>
-  <p> I started Maestoso back in late october 2017 as a way for me to learn to code in JavaScript, I learned pretty quickly and now it has become my hobby. When I have time and when I want to I work on it. I always want the core features of Maestoso to be free, but there might be a way to donate some time in the future. Right now I'm glad with what I have and I'm grateful for everyone that uses Maestoso.
-  <h3> Note: </h3>
-  <p class = "prefix"> Maestoso's prefix is ?? but you can mention Maestoso and customize the prefix on your server to your liking.
-  </div>
-  <div class = "footer">
-<div class = "stats">
-<p>
-Maestoso is currently in 
-<span id="guild-count">90+</span>
-servers.
-</p>
-</div>
-  <div class = "copyright">
-  <p> Copyright © 2018 <a target = "_blank" href = "http://deadlyforce.net/">DeadlyForce.</a>  All Rights Reserved. </p>
-  </div>
-  </div>
-<script>
-    var request = new XMLHttpRequest();
-    request.open('GET', 'https://discordbots.org/api/bots/374652901148196866/stats?_', true);
-    request.onload = function() {
-        if (request.status >= 200 && request.status < 400) {
-            var data = JSON.parse(request.responseText);
-            document.getElementById("guild-count").innerText = data['server_count'].toLocaleString();
-        }
-    };
-    request.onerror = function(){}; 
-    request.send();
-</script>
-</body>
-  </html>
+}
+li a.active:hover {
+	color: #FFA500;
+}
+body {
+ margin: 0px;
+}
+.discordbots {
+	text-align: center;
+}
+.copyright {
+	font-size: 13px;
+}
+.copyright a {
+	color: #FFA500;
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+.copyright a:hover {
+	color: #b27300;
+	text-decoration: underline;
+}
+.mainpart {
+	font-family: Roboto;
+	margin: 15px;
+}
+.mainpart h1 {
+	border-bottom: 1px solid #d8d8be;
+}
+.mainpart h3 {
+	border-bottom: 1px solid #d8d8be;
+}
+.stats {
+	text-align: center;
+}
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}
+.prefix {
+	
+}
+.copyright {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
