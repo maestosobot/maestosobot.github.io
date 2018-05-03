@@ -9,6 +9,7 @@
     <meta name="twitter:title" content="Maestoso" />
     <meta name="twitter:description" content="Maestoso is a multifunctional discord bot that can do music, basic moderation, translation and much more." />
     <meta name="twitter:image" content="https://i.imgur.com/cCIpkkM.png"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
 
     <meta name="theme-color" content="#7289da">
@@ -21,7 +22,6 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <span class = "menu-trigger"> MENU </span>
   <div class = "navbar">
 <ul>
   <li> <a href = "https://maestosobot.github.io/"> <img class = "image" src = "https://i.imgur.com/cCIpkkM.png"> </a> </li>
@@ -32,6 +32,7 @@
   <li> <a href = "./listedon"> Listed On </a> </li>
   </ul>
   </div>
+    <div class ="handle">Menu</div>
   <br>
   <div class = "mainpart">
   <h1> About </h1>
@@ -62,6 +63,11 @@ servers.
     };
     request.onerror = function(){}; 
     request.send();
+</script>
+<script> 
+  $('.handle').on('click', function() {
+    $('navbar ul').toggleClass('navshow');
+  });
 </script>
 </body>
   </html>
