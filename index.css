@@ -113,6 +113,7 @@ body {
 	
 	.handle {
 		display: block;
+		background: #36393E;
 	}
 	nav {
 		display: none; 
