@@ -94,7 +94,27 @@ body {
   padding: 1rem;
   text-align: center;
 }
-.prefix {
+
+.menu-trigger {
+	display: none;	
+}
+
+@media screen and (max-width: 480px) {
+	
+	.menu-trigger {
+		display: block;
+	}
+	div.navbar {
+		display: none; 
+	}
+	div.navbar ul li {
+		float: none;
+		border-bottom: 1px solid #86888b;
+	}
+	
+	div.navbar ul li:last-child {
+		border-bottom: none;	
+	}
 	
 }
 .copyright {
