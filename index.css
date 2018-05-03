@@ -107,13 +107,13 @@ body {
 	padding: 15px 10px;
 	cursor: pointer;
 	color: #fff;
+        background-color: #36393E;
 	display: none;
 }
 @media screen and (max-width: 580px) {
 	
 	.handle {
 		display: block;
-		background: #36393E;
 	}
 	nav {
 		display: none; 
