@@ -4,7 +4,7 @@ html {
  font-family: Karla;
  background-color: #F1F1D4;
 }
-.navbar ul {
+.nav ul {
     margin: 0px;
     list-style-type: none;
     position: sticky;
@@ -14,7 +14,7 @@ html {
     -o-transition: max-height 0.4s;
     transition: max-height 0.4s;
 }
-.navbar {
+.nav {
 	background-color: #36393E;
 	margin: 0px;
 	height: 72px;
@@ -23,7 +23,7 @@ html {
 	color: #fff;
 	text-align: right;
 }
-.navbar li {
+.nav li {
  margin-top: 27px;
  float: left;
  margin-right: 20px;
@@ -114,16 +114,16 @@ body {
 	.handle {
 		display: block;
 	}
-	.navbar {
+	.nav {
 		display: none; 
 	}
-	.navbar ul {
+	.nav ul {
 		max-height: 0px;	
 	}
 	.navshow {
 		max-height: 580px;	
 	}
-	.navbar ul li {
+	.nav ul li {
 		float: none;
 		box-sizing: border-box;
 		padding: 15px;
@@ -131,7 +131,7 @@ body {
 		border-bottom: 1px solid #86888b;
 	}
 	
-	.navbar ul li:last-child {
+	.nav ul li:last-child {
 		border-bottom: none;	
 	}
 	
