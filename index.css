@@ -8,11 +8,11 @@ html {
     margin: 0px;
     list-style-type: none;
     position: sticky;
-    -webkit-transition: max-width 0.4s;
-    -ms-transition: max-width 0.4s;
-    -moz-transition: max-width 0.4s;
-    -o-transition: max-width 0.4s;
-    transition: max-width 0.4s;
+    -webkit-transition: max-height 0.4s;
+    -ms-transition: max-height 0.4s;
+    -moz-transition: max-height 0.4s;
+    -o-transition: max-height 0.4s;
+    transition: max-height 0.4s;
 }
 .navbar {
 	background-color: #36393E;
@@ -118,10 +118,10 @@ body {
 		display: none; 
 	}
 	.navbar ul {
-		max-width: 0px;	
+		max-height: 0px;	
 	}
 	.navshow {
-		max-width: 580px;	
+		max-height: 580px;	
 	}
 	.navbar ul li {
 		float: none;
