@@ -4,10 +4,15 @@ html {
  font-family: Karla;
  background-color: #F1F1D4;
 }
-ul {
+.navbar ul {
     margin: 0px;
     list-style-type: none;
-	position: sticky;
+    position: sticky;
+    -webkit-transition: max-width 0.4s;
+    -ms-transition: max-width 0.4s;
+    -moz-transition: max-width 0.4s;
+    -o-transition: max-width 0.4s;
+    transition: max-width 0.4s;
 }
 .navbar {
 	background-color: #36393E;
@@ -16,9 +21,10 @@ ul {
 	box-sizing: border-box;
 	display: flex;
 	color: #fff;
+	text-align: right;
 }
-li {
-	margin-top: 27px;
+.navbar li {
+ margin-top: 27px;
  float: left;
  margin-right: 20px;
 }
@@ -40,7 +46,7 @@ li a:hover {
 	color: #FFA500;
 }
 li a {
-	-webkit-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -95,28 +101,38 @@ body {
   text-align: center;
 }
 
-.menu-trigger {
-	display: none;	
+.handle {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 15px 10px;
+	cursor: pointer;
+	color: #fff;
+	display: none;
 }
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
 	
-	.menu-trigger {
+	.handle {
 		display: block;
 	}
-	div.navbar {
+	.navbar {
 		display: none; 
 	}
-	div.navbar ul li {
+	.navbar ul {
+		max-width: 0px;	
+	}
+	.navshow {
+		max-width: 580px;	
+	}
+	.navbar ul li {
 		float: none;
+		box-sizing: border-box;
+		padding: 15px;
+		width: 100%;
 		border-bottom: 1px solid #86888b;
 	}
 	
-	div.navbar ul li:last-child {
+	.navbar ul li:last-child {
 		border-bottom: none;	
-	}
-	div.navbar-e {
-		display: block;	
 	}
 	
 }
