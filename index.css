@@ -115,6 +115,9 @@ body {
 	div.navbar ul li:last-child {
 		border-bottom: none;	
 	}
+	div.navbar-e {
+		display: block;	
+	}
 	
 }
 .copyright {
