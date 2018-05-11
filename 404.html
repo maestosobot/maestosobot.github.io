@@ -1,4 +1,64 @@
 <!DOCTYPE html>
 <html>
-<p> test </p>
-</html>
+  <head>
+    
+    <title>Maestoso | Error 404</title>
+    <link rel = "icon" href = "https://i.imgur.com/cCIpkkM.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:card" value="summary" />
+    <meta name="twitter:title" content="Maestoso" />
+    <meta name="twitter:description" content="Maestoso is a multifunctional discord bot that can do music, basic moderation, translation and much more." />
+    <meta name="twitter:image" content="https://i.imgur.com/cCIpkkM.png"> 
+    
+
+    <meta name="theme-color" content="#7289da">
+
+    <meta property="og:title" content="Maestoso" />
+    <meta property="og:url" content="https://maestoso.github.io/" /> 
+    <meta name="twitter:description" content="Maestoso is a multifunctional discord bot that can do music, basic moderation, translation and much more." />
+    <meta property="og:image" content="https://i.imgur.com/cCIpkkM.png" /> 
+    <link rel = "stylesheet" href = "./404.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+  <nav>
+<ul>
+  <li> <a href = "https://maestosobot.github.io/"> <img class = "image" src = "https://i.imgur.com/cCIpkkM.png"> </a> </li>
+  <li> <a href = "https://maestosobot.github.io/"> Home </a> </li>
+  <li> <a target="_blank" href = "https://discord.gg/shbXPXA"> Support Server </a> </li>
+  <li> <a target="_blank" href = "https://discordapp.com/oauth2/authorize?client_id=374652901148196866&scope=bot&permissions=70609991"> Invite </a> </li>
+  <li> <a href = "./commands"> Commands </a> </li>
+  <li> <a href = "./listedon"> Listed On </a> </li>
+  </ul>
+  </nav>
+    <div class ="handle">Menu</div>
+  <br>
+  <div class = "mainpart">
+  <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Twemoji_1f62d.svg/512px-Twemoji_1f62d.svg.png" class = "404image"/>
+  <h1> Error 404 </h1>
+    <p> I've tried very hard but I couldn't find the page that you're looking for </p>
+    </div>
+  <div class = "footer">
+  <div class = "copyright">
+  <p> Copyright © 2018 <a target = "_blank" href = "http://deadlyforce.net/">DeadlyForce.</a>  All Rights Reserved. </p>
+  </div>
+  </div>
+<script>
+    var request = new XMLHttpRequest();
+    request.open('GET', 'https://discordbots.org/api/bots/374652901148196866/stats?_', true);
+    request.onload = function() {
+        if (request.status >= 200 && request.status < 400) {
+            var data = JSON.parse(request.responseText);
+            document.getElementById("guild-count").innerText = data['server_count'].toLocaleString();
+        }
+    };
+    request.onerror = function(){}; 
+    request.send();
+</script>
+<script> 
+  $('.handle').on('click', function() {
+    $('nav ul').toggleClass('navshow');
+  });
+</script>
+</body>
+  </html>
