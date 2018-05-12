@@ -14,6 +14,10 @@ nav ul {
     -o-transition: max-height 0.4s;
     transition: max-height 0.4s;
 }
+.404image {
+	width: 300px;
+	height: 300px;
+}
 nav {
 	background-color: #36393E;
 	margin: 0px;
